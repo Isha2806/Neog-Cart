@@ -1,0 +1,16 @@
+.wishlist-container{
+    padding: 3rem;
+}
+.wishlist-name {
+	margin-bottom: 2rem;
+	text-align: center;
+    font-size: 4rem;
+    color: #eee;
+}
+
+.wishlist { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 44rem);
+	gap: 1rem;
+	justify-content: center;
+}
