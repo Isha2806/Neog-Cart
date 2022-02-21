@@ -1,0 +1,51 @@
+.cart-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2 rem;
+    gap:2rem;
+}
+
+/*Quantity*/
+.quantity{
+    display:flex;
+    gap:8px;
+    margin:1rem;
+    padding:0.5 rem;
+}
+.increase,
+.decrease{
+    outline: 2px seashell;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.quantity-input{
+    width:6ch;
+    text-emphasis: none;
+    text-align: center;
+}
+/*Card bill*/
+.cart-bill{
+    padding:1rem 2 rem;
+    font-size: 2rem;
+}
+.cart-bill h2{
+    text-align: center;
+}
+.price-details{
+    text-align: center;
+}
+.price-details li{
+    list-style: none;
+    margin:2rem;
+}
+.price-details li:last-child{
+    font-weight: 900;
+}
+.cart-bill>p{
+    padding: 0 1rem;
+}
+.btn{
+    width:100%;
+}
