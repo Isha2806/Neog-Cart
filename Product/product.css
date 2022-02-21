@@ -8,13 +8,16 @@
 /* side Left */
 .side-left {
 	position: sticky;
-	top: 5rem;
+	top: 8rem;
 	grid-area: sideleft;
 	overflow-y: auto;
 	height: calc(100vh - 8.2rem);
 	display: flex;
 	flex-direction: column;
-	padding: 0 2rem;
+	padding: 2 5rem;
+	color:#fff;
+	
+	
 }
 .side-filter {
 	display: flex;
@@ -23,7 +26,9 @@
 }
 .filter-heading {
 	margin: var(--m8) 0;
-	font-size: 1.4rem;
+	font-size: 3 rem;
+	font-weight: 300;
+	
 }
 .price-range {
 	display: flex;
@@ -36,12 +41,13 @@ input[type="range"] {
 .side-list li {
 	list-style: none;
 	margin: var(--m4) 0;
-	font-size: 1rem;
+	font-size: 2rem;
+	margin-left: 1.5rem;
 }
 input[type="radio"],
 input[type="checkbox"] {
-	width: 1rem;
-	height: 1rem;
+	width: 3rem;
+	height: 3rem;
 	cursor: pointer;
 }
 
@@ -49,21 +55,20 @@ input[type="checkbox"] {
 .main {
 	grid-area: main;
 	width: 100%;
+
+	
 }
 .Product-category-name {
-	margin: 1.3rem 0;
-	font-size: 1.4rem;
-	margin-left: 2rem;
+	font-size: 3.4rem;
+	margin: 2.3rem 1rem;
+		color:#fff;
 }
 
 .products {
 	display: grid;
-	grid-template-rows: repeat(auto-fit, 34rem);
+	gap: 8rem;
+	grid-template-rows: repeat(auto-fit, 44rem);
     grid-template-columns: repeat(auto-fit, 30rem);
-
-	gap: 1rem;
-	display: grid;
-	
 }
 .card-button-ecom:hover {
 	background-color: var(--secondary-color);
