@@ -1,13 +1,16 @@
 .cart-container{
+    margin: 10%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
     padding: 2 rem;
     gap:2rem;
+    display: grid;
+    grid-template-columns: 4fr;
+   
 }
 
-/*Quantity*/
+
 .quantity{
     display:flex;
     gap:8px;
@@ -29,6 +32,7 @@
 .cart-bill{
     padding:1rem 2 rem;
     font-size: 2rem;
+   
 }
 .cart-bill h2{
     text-align: center;

@@ -12,84 +12,67 @@
     
 </head>
 <body>
-    <div class="container">
-        <!--Navbar-->
+   <div class = "container">
+   
        <div class="login-page-logo logo">
             <span class="p-1">N</span>
             <span class="p-2">G</span>
             <span>Neog</span><span>Cart</span>
-            <a href="#" class="logo">
-                <i class="fab fa-apple"></i>
-            </a>
-      
         </div>
-       <!--Navbar End-->
   
-    
-        <side class = "side-left">
-           <div class = "side-filter">
-            <h1 class="filter-heading">All Filters</h1>
-            <h3 class="filter-heading">Clear All</h3>
-           </div>
-           <h1 class = "filter-heading"></h1>
-               <div>
-                   <div class = "price-range">
-                       <p>100</p>
-                       <p>500</p>
-                       <p>1000</p>
-                       <p>50000</p>
-                       <p>100000</p>
-                   </div>
-                   <input type="range"min="100" max="100000"/>
-               </div>
-           <!--Category in neog cart-->
-           <h1 class="filter-heading">Category</h1>
-           <ul class="side-list">
-               <li>
-                   <input type="checkbox" >
-                   <label for = "newCome">New Releases</label>
-               </li>
-               <li>
-                <input type="checkbox" >
-                <label for = "iPhones">iPhones</label>
-                </li>
-                <li>
-                    <input type="checkbox" >
-                    <label for = "MacBook">MacBook</label>
-                </li>
-                <li>
-                    <input type="checkbox" >
-                    <label for = "Watches">Watches</label>
-                </li>
-                <li>
-                    <input type="checkbox" >
-                    <label for = "AirPods">Airpods</label>
-                </li>
-           </ul>
-           <ul class = "side-list">
-               <h1 class = "filter-heading">From Neog Cart</h1>
-               <li>
-                   <input type = "radio">
-                   <label for = "neog-team"> For Neog-Team</label>
-               </li>
-               <li>
-                <input type = "radio">
-                <label for = "neograd"> For Neograds</label>
-            </li>
-            <li>
-                <input type = "radio">
-                <label for = "neogrammer"> For Neogrammers</label>
-            </li>
-           </ul>
-         </side>
-    </div>
-    <!--Main Section-->
-    <main class = "main">
-        <h1 class="Product-category-name">All Neog-Cart Products</h1>
-        <div class = "products">
-            <!--Card 1-->
-            <div class="component-example">
-                <div class="card card-ecommerce">
+            <div class = "main-container">
+                <side class = "side-left">
+                     <aside class="product-filter-section">
+                    <div class="product-filter-heading">
+                        <p class="fw-7">Filters</p>
+                        <a href="#">Clear</a>
+                    </div>
+                    <div class="price-range-container">
+                        <p class="fw-7">Price Range</p>
+                        <div>
+                            <div class="price-range-values">
+                                <p>100</p>
+                                <p>1000</p>
+                                <p>5000</p>
+                            </div>
+                            <input type="range" min="0" max="5000" class="price-slider"/>
+                         </div>
+                    </div>
+                    <div class="input-filter-container">
+                        <p class="fw-7">Category</p>
+                        <ul class="check-lists">
+                            <li><input type="checkbox"/>Neogrammer</li>
+                            <li><input type="checkbox"/>NeoGrad</li>
+                            <li><input type="checkbox"/>Neo-Team</li>
+                        </ul>
+                    </div>
+                    <div class="input-filter-container">
+                        <p class="fw-7">Rating</p>
+                        <ul class="check-lists">
+                            <li><input type="radio" name="star-rating"/>4 Stars & above</li>
+                            <li><input type="radio" name="star-rating"/>3 Stars & above</li>
+                            <li><input type="radio" name="star-rating"/>2 Stars & above</li>
+                            <li><input type="radio" name="star-rating"/>1 Stars & above</li>
+                        </ul>
+                    </div>
+                    <div class="input-filter-container">
+                        <p class="fw-7">Sort by</p>
+                        <ul class="check-lists">
+                            <li><input type="radio" name="sort-by"/>Price - Low to High</li>
+                            <li><input type="radio" name="sort-by"/>Price - High to Low</li>
+                           
+                        </ul>
+                    </div>
+                </aside>
+
+                </side>
+                <div class="sub-container">
+                    <main class = "product-display-main">
+                        <p class="Product-category-name">All Neog-Cart Products</p>
+                        <div class = "products"> 
+                            <!--Card 1-->
+                            <div class="component-example">
+                                 <div class="card card-ecommerce">
                    <div class="card-badge">Limited stock </div>
                   <img class="card-img" src="/images/AirPods/airpods-1.png" />
                   <div class="card-titles">
@@ -99,6 +82,18 @@
       
                   <button class="card-button"> Claim Now ! </button>
                   </div></div>
+                   <!--Card 1-->
+                   <div class="component-example">
+                    <div class="card card-ecommerce">
+      <div class="card-badge">Limited stock </div>
+     <img class="card-img" src="/images/AirPods/airpods-1.png" />
+     <div class="card-titles">
+       <h2>Reward Hamper!
+       </h2>
+     </div>
+
+     <button class="card-button"> Claim Now ! </button>
+     </div></div>
             <!--Card 2-->
                         <div class="component-example">
                             <div class="card card-ecommerce">
@@ -135,11 +130,13 @@
                               <button class="card-button"> WishList </button>
                               <button class="card-button"> Buy </button>
                               </div></div>
-        </div>
+        
     </main>
     <!--Main Section End -->
-   
+
+</div>
+</div>  
     
- 
+</div>
 </body>
 </html>
